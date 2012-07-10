@@ -1,0 +1,30 @@
+{
+  "name": "passport-oauth2-client-password",
+  "version": "0.1.0",
+  "description": "OAuth 2.0 client password authentication strategy for Passport.",
+  "keywords": ["passport", "oauth", "oauth2", "authn", "authentication", "authz", "authorization", "api"],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jaredhanson/passport-oauth2-client-password.git"
+  },
+  "bugs": {
+    "url": "http://github.com/jaredhanson/passport-oauth2-client-password/issues"
+  },
+  "author": { "name": "Jared Hanson", "email": "jaredhanson@gmail.com", "url": "http://www.jaredhanson.net/" },
+  "licenses": [ {
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/MIT" 
+  } ],
+  "main": "./lib/passport-oauth2-client-password",
+  "dependencies": {
+    "pkginfo": "0.2.x",
+    "passport": "~0.1.1"
+  },
+  "devDependencies": {
+    "vows": "0.6.x"
+  },
+  "scripts": {
+    "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js test/**/*-test.js"
+  },
+  "engines": { "node": ">= 0.4.0" }
+}
