@@ -1,5 +1,12 @@
 # passport-oauth2-client-password
 
+OAuth 2.0 client password authentication strategy for [Passport](https://github.com/jaredhanson/passport).
+
+This module lets you authenticate requests containing client credentials in the
+request body, as [defined](http://tools.ietf.org/html/draft-ietf-oauth-v2-27#section-2.3.1)
+by the OAuth 2.0 specification.  These credentials are typically used protect
+the token endpoint and used as an alternative to HTTP Basic authentication.
+
 ## Tests
 
     $ npm install --dev
