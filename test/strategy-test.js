@@ -215,8 +215,8 @@ vows.describe('ClientPasswordStrategy').addBatch({
       'should not call success or error' : function(err, challenge, status) {
         assert.isNull(err);
       },
-      'should fail authentication with status code 400' : function(err, challenge, status) {
-        assert.equal(challenge, 400);
+      'should fail authentication with default status' : function(err, challenge, status) {
+        assert.isUndefined(challenge);
       },
     },
   },
@@ -254,8 +254,8 @@ vows.describe('ClientPasswordStrategy').addBatch({
       'should not call success or error' : function(err, challenge, status) {
         assert.isNull(err);
       },
-      'should fail authentication with status code 400' : function(err, challenge, status) {
-        assert.equal(challenge, 400);
+      'should fail authentication with default status' : function(err, challenge, status) {
+        assert.isUndefined(challenge);
       },
     },
   },
@@ -293,8 +293,8 @@ vows.describe('ClientPasswordStrategy').addBatch({
       'should not call success or error' : function(err, challenge, status) {
         assert.isNull(err);
       },
-      'should fail authentication with status code 400' : function(err, challenge, status) {
-        assert.equal(challenge, 400);
+      'should fail authentication with default status' : function(err, challenge, status) {
+        assert.isUndefined(challenge);
       },
     },
   },
