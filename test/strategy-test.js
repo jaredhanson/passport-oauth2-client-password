@@ -310,7 +310,7 @@ vows.describe('ClientPasswordStrategy').addBatch({
       var strategy = new ClientPasswordStrategy({passReqToCallback:true}, function(req, clientId, clientSecret, done) {
         assert.isNotNull(req);
         if (clientId == 'c1234' && clientSecret == 'shh-its-a-secret') {
-          done(null, { id: clientId });
+          done(null, { id: clientId, foo: req.params.foo });
         } else {
           done(null, false);
         }
@@ -322,6 +322,7 @@ vows.describe('ClientPasswordStrategy').addBatch({
       topic: function(strategy) {
         var self = this;
         var req = {};
+        req.params = { foo: 'bar' }
         strategy.success = function(user) {
           self.callback(null, user);
         }
@@ -345,6 +346,7 @@ vows.describe('ClientPasswordStrategy').addBatch({
       },
       'should authenticate' : function(err, user) {
         assert.equal(user.id, 'c1234');
+        assert.equal(user.foo, 'bar');
       },
     },
   },
