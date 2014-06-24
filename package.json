@@ -19,7 +19,7 @@
     "type": "MIT",
     "url": "http://www.opensource.org/licenses/MIT"
   } ],
-  "main": "./lib/passport-oauth2-client-password",
+  "main": "./lib",
   "dependencies": {
     "passport-strategy": "1.x.x"
   },
