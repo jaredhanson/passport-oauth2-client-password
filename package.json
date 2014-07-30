@@ -17,15 +17,14 @@
   },
   "licenses": [ {
     "type": "MIT",
-    "url": "http://www.opensource.org/licenses/MIT" 
+    "url": "http://www.opensource.org/licenses/MIT"
   } ],
-  "main": "./lib/passport-oauth2-client-password",
+  "main": "./lib",
   "dependencies": {
-    "pkginfo": "0.2.x",
-    "passport": "~0.1.1"
+    "passport-strategy": "1.x.x"
   },
   "devDependencies": {
-    "vows": "0.6.x"
+    "vows": "0.7.x"
   },
   "scripts": {
     "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js"
