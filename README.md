@@ -7,6 +7,11 @@ request body, as [defined](http://tools.ietf.org/html/draft-ietf-oauth-v2-27#sec
 by the OAuth 2.0 specification.  These credentials are typically used protect
 the token endpoint and used as an alternative to HTTP Basic authentication.
 
+[![npm](https://img.shields.io/npm/v/passport-oauth2-client-password.svg)](https://www.npmjs.com/package/passport-oauth2-client-password)
+[![build](https://img.shields.io/travis/jaredhanson/passport-oauth2-client-password.svg)](https://travis-ci.org/jaredhanson/passport-oauth2-client-password)
+[![coverage](https://img.shields.io/coveralls/jaredhanson/passport-oauth2-client-password.svg)](https://coveralls.io/github/jaredhanson/passport-oauth2-client-password)
+[...](https://github.com/jaredhanson/passport-oauth2-client-password/wiki/Status)
+
 ## Install
 
     $ npm install passport-oauth2-client-password
@@ -57,8 +62,6 @@ tokens from the token endpoint.
 
     $ npm install --dev
     $ make test
-
-[![Build Status](https://secure.travis-ci.org/jaredhanson/passport-oauth2-client-password.png)](http://travis-ci.org/jaredhanson/passport-oauth2-client-password)
 
 ## Credits
 
