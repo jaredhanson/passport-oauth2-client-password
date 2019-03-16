@@ -14,7 +14,9 @@ the token endpoint and used as an alternative to HTTP Basic authentication.
 
 ## Install
 
-    $ npm install passport-oauth2-client-password
+```sh
+$ npm install passport-oauth2-client-password
+```
 
 ## Usage
 
@@ -24,16 +26,18 @@ The OAuth 2.0 client password authentication strategy authenticates clients
 using a client ID and client secret.  The strategy requires a `verify` callback,
 which accepts those credentials and calls `done` providing a client.
 
-    passport.use(new ClientPasswordStrategy(
-      function(clientId, clientSecret, done) {
-        Clients.findOne({ clientId: clientId }, function (err, client) {
-          if (err) { return done(err); }
-          if (!client) { return done(null, false); }
-          if (client.clientSecret != clientSecret) { return done(null, false); }
-          return done(null, client);
-        });
-      }
-    ));
+```js
+passport.use(new ClientPasswordStrategy(
+    function(clientId, clientSecret, done) {
+    Clients.findOne({ clientId: clientId }, function (err, client) {
+      if (err) { return done(err); }
+      if (!client) { return done(null, false); }
+      if (client.clientSecret != clientSecret) { return done(null, false); }
+      return done(null, client);
+    });
+  }
+));
+```
 
 #### Authenticate Requests
 
@@ -46,9 +50,11 @@ For example, as route middleware in an [Express](http://expressjs.com/)
 application, using [OAuth2orize](https://github.com/jaredhanson/oauth2orize)
 middleware to implement the token endpoint:
 
-    app.get('/profile', 
-      passport.authenticate(['basic', 'oauth2-client-password'], { session: false }),
-      oauth2orize.token());
+```
+app.get('/profile', 
+  passport.authenticate(['basic', 'oauth2-client-password'], { session: false }),
+  oauth2orize.token());
+```
 
 ## Examples
 
@@ -60,8 +66,10 @@ tokens from the token endpoint.
 
 ## Tests
 
-    $ npm install --dev
-    $ make test
+```sh
+$ npm install --dev
+$ make test
+```
 
 ## Credits
 
