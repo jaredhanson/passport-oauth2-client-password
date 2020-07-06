@@ -7,6 +7,16 @@ request body, as [defined](http://tools.ietf.org/html/draft-ietf-oauth-v2-27#sec
 by the OAuth 2.0 specification.  These credentials are typically used protect
 the token endpoint and used as an alternative to HTTP Basic authentication.
 
+---
+
+<p align="center">
+  <sup>Advertisement</sup>
+  <br>
+  <a href="https://click.linksynergy.com/link?id=D*o7yui4/NM&offerid=507388.2609434&type=2&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fnodejs-api-masterclass%2F&u1=Ius3vVkJ3XVRPjqYb7g5YZNfcwKVDaXt4Y3yy6cQe6YnPBuctE4XdNGVXalQgXP">Node.js API Masterclass With Express & MongoDB</a><br>Create a real world backend for a bootcamp directory app
+</p>
+
+---
+
 [![npm](https://img.shields.io/npm/v/passport-oauth2-client-password.svg)](https://www.npmjs.com/package/passport-oauth2-client-password)
 [![build](https://img.shields.io/travis/jaredhanson/passport-oauth2-client-password.svg)](https://travis-ci.org/jaredhanson/passport-oauth2-client-password)
 [![coverage](https://img.shields.io/coveralls/jaredhanson/passport-oauth2-client-password.svg)](https://coveralls.io/github/jaredhanson/passport-oauth2-client-password)
